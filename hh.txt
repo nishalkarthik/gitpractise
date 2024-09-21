@@ -1,0 +1,81 @@
+solace issue with primary and standby failover...02 was set to primary and 01 to standby then they chnaged it
+lock quene additioanlly came up and disappeared afterwards
+job to run gossip server was not included in release procedure
+
+
+Docker build  
+
+FROM 
+from which OS or platform we are building the container
+FROM centos  
+FROM java 
+
+RUN 
+
+What are the linux commands that needs to be executed inside the container
+RUN yum install -y httpd wget nano 
+RUN chmod a+x script.sh && cp script.sh /tmp 
+RUN mkdir /nishal 
+WORKDIR /nishal 
+
+
+ARG
+To pass new arguments or variables inside the docker file
+ARG version=5.7 
+RUN yum install mysql${version} 
+CI-CD argument passing  
+
+ 
+
+ENV  
+mentioning the environment variables  
+ENV JAVA_HOME=/usr/local/java 
+
+WORKDIR  
+to work inside a specific folder 
+WORKDIR /tmp 
+WORKDIR /var/www/html 
+
+ 
+
+COPY  
+Copy a file 
+COPY file destination 
+local copy 
+COPY index.html /var/www/html 
+
+ADD 
+url add 
+ADD url path  
+url copy  
+ADD https://nexus.com/web.jar /usr/local/bin 
+
+CMD 
+To make the app up and running  
+(systemctl start httpd)  
+CMD [/usr/sbin/httpd] - override 
+Docker run -it -d –name webcon -p 8080:80 web1:v1 -c /usr/bin/http 
+
+ENTRYPOINT same like CMD - no override  
+ENTRYPOINT [/usr/sbin/httpd -D FOREGROUND]  
+
+USER  
+executes a service using a specific user name  
+RUN useradd rajubhai 
+USER rajubhai 
+RUN ./script.sh  
+
+ 
+
+VOLUME 
+VOLUME /var/lib/python 
+
+EXPOSE  
+To expose a port  
+EXPOSE 80 
+
+MAINTAINER  
+authorname-nk/ email - nk@gmail.com 
+
+LABEL 
+ostype=Linux/v7 / appname= tomcat 
