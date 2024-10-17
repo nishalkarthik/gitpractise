@@ -1,0 +1,11 @@
+•	Creation and Configuration of Terraform, AWS CLI for AWS services. 
+•	Creation of modules in Terraform for multi pillar architecture with remote state in S3 for different environments. 
+•	Configuration of Java, Jenkins in EC2 instance. 
+•	Integration of GIT with Jenkins to pull code from git for the maven build. 
+•	Creation, Configuration, and Integration of Docker with Jenkins.
+•	Creation and Configurations of Elastic Beanstalk environments using Terraform. 
+•	Creation of Continuous Integration of build jobs to create software packages using Jenkins as CI-CD tool and maven/ant as build tools.
+•	Writing Terraform modules for infrastructure and ansible for application deployment on elastic beanstalk and on independent EC2`s.
+•	Creation of Jenkins Deployment Job for deployment of application artifacts on to the beanstalk environment with Blue-Green deployment strategy. 
+•	Continuous monitoring using Data-dog. 
+•	Integrating SonarQube for code analysis and Nexus-Artifactory for build artifacts releases in CI Pipeline.
